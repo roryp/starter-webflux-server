@@ -19,6 +19,11 @@ public class McpServerApplication {
 	public ToolCallbackProvider weatherTools(WeatherService weatherService) {
 		return MethodToolCallbackProvider.builder().toolObjects(weatherService).build();
 	}
+	
+	@Bean
+	public ToolCallbackProvider echoTools(EchoService echoService) {
+		return MethodToolCallbackProvider.builder().toolObjects(echoService).build();
+	}
 
 	public record TextInput(String input) {
 	}

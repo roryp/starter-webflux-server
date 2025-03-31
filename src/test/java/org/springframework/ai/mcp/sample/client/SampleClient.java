@@ -16,6 +16,7 @@
 package org.springframework.ai.mcp.sample.client;
 
 import java.util.Map;
+import java.util.HashMap;
 
 import io.modelcontextprotocol.client.McpClient;
 import io.modelcontextprotocol.spec.McpClientTransport;
@@ -43,15 +44,24 @@ public class SampleClient {
 		ListToolsResult toolsList = client.listTools();
 		System.out.println("Available Tools = " + toolsList);
 
+		// Test weather service
 		CallToolResult weatherForcastResult = client.callTool(new CallToolRequest("getWeatherForecastByLocation",
 				Map.of("latitude", "47.6062", "longitude", "-122.3321")));
-		System.out.println("Weather Forcast: " + weatherForcastResult);
+		System.out.println("Weather Forecast: " + weatherForcastResult);
 
 		CallToolResult alertResult = client.callTool(new CallToolRequest("getAlerts", Map.of("state", "NY")));
 		System.out.println("Alert Response = " + alertResult);
+		
+		// Test echo service with plain text
+		CallToolResult echoMessageResult = client.callTool(new CallToolRequest("echoMessage", 
+				Map.of("message", "Hello, this is a plain text message to echo!")));
+		System.out.println("Echo Message Result (Plain Text): " + echoMessageResult);
+		
+		// Test echo with prefix - also using plain text
+		CallToolResult echoWithPrefixResult = client.callTool(new CallToolRequest("echoWithPrefix", 
+				Map.of("text", "This is plain text with a prefix")));
+		System.out.println("Echo With Prefix Result (Plain Text): " + echoWithPrefixResult);
 
 		client.closeGracefully();
-
 	}
-
 }
