@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/devcontainers/java:17
+FROM mcr.microsoft.com/devcontainers/java:21
 
-ARG MAVEN_VERSION="3.8.7"
+ARG MAVEN_VERSION="3.9.6"
 ARG USER="vscode"
 
 # Install additional packages

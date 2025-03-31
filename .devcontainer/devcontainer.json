@@ -21,9 +21,9 @@
     "remoteUser": "vscode",
     "features": {
         "ghcr.io/devcontainers/features/java:1": {
-            "version": "17",
+            "version": "21",
             "installMaven": true,
-            "mavenVersion": "3.8.7"
+            "mavenVersion": "3.9.6"
         }
     },
     "postCreateCommand": "chmod +x mvnw && ./mvnw dependency:resolve"
