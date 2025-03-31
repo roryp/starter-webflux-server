@@ -67,7 +67,7 @@ See the `.devcontainer` folder for more details.
 The project includes a Dockerfile for containerization:
 
 ```bash
-docker build --pull --rm -f 'DockerFile' -t 'starterwebfluxserver:latest' '.' 
+docker build --pull --rm -f 'DockerFile' -t 'starterwebfluxserver:latest' '.'  
 docker run -d -p 8080:8080 starterwebfluxserver:latest
 ```
 
