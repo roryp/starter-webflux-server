@@ -176,7 +176,3 @@ The project includes a Dockerfile for containerization:
 docker build --pull --rm -f 'DockerFile' -t 'starterwebfluxserver:latest' '.' 
 docker run -d -p 8080:8080 starterwebfluxserver:latest
 ```
-
-## Last Updated
-
-This documentation was last updated on: March 31, 2025
