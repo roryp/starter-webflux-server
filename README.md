@@ -1,6 +1,6 @@
-# Spring AI MCP Weather and Echo Server Sample with WebFlux Starter
+# Spring AI MCP Echo Server Sample with WebFlux Starter
 
-This sample project demonstrates how to create an MCP server using the Spring AI MCP Server Boot Starter with WebFlux transport. It implements both a weather service that exposes tools for retrieving weather information using the National Weather Service API and an echo service that provides simple text echo functionality.
+This sample project demonstrates how to create an MCP server using the Spring AI MCP Server Boot Starter with WebFlux transport. It implements a simple echo service that provides text echo functionality.
 
 For more information, see the [MCP Server Boot Starter](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html) reference documentation.
 
@@ -10,9 +10,6 @@ The sample showcases:
 - Integration with `spring-ai-mcp-server-webflux-spring-boot-starter`
 - Support for SSE (Server-Sent Events)
 - Automatic tool registration using Spring AI's `@Tool` annotation
-- Two weather-related tools:
-  - Get weather forecast by location (latitude/longitude)
-  - Get weather alerts by US state
 - Echo service tools:
   - Echo back messages exactly as received
 - Function-based tool:

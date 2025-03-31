@@ -28,14 +28,6 @@ public class SampleClient {
 		ListToolsResult toolsList = client.listTools();
 		System.out.println("Available Tools = " + toolsList);
 
-		// Test weather service
-		CallToolResult weatherForcastResult = client.callTool(new CallToolRequest("getWeatherForecastByLocation",
-				Map.of("latitude", "47.6062", "longitude", "-122.3321")));
-		System.out.println("Weather Forecast: " + weatherForcastResult);
-
-		CallToolResult alertResult = client.callTool(new CallToolRequest("getAlerts", Map.of("state", "NY")));
-		System.out.println("Alert Response = " + alertResult);
-		
 		// Test echo service with plain text
 		CallToolResult echoMessageResult = client.callTool(new CallToolRequest("echoMessage", 
 				Map.of("message", "Hello, this is a plain text message to echo!")));
