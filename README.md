@@ -12,8 +12,6 @@ The sample showcases:
 - Automatic tool registration using Spring AI's `@Tool` annotation
 - Echo service tools:
   - Echo back messages exactly as received
-- Function-based tool:
-  - Convert text to uppercase
 
 ## Dependencies
 

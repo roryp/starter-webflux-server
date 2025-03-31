@@ -23,12 +23,4 @@ public class McpServerApplication {
 	public record TextInput(String input) {
 	}
 
-	@Bean
-	public ToolCallback toUpperCase() {
-		return FunctionToolCallback.builder("toUpperCase", (TextInput input) -> input.input().toUpperCase())
-			.inputType(TextInput.class)
-			.description("Put the text to upper case")
-			.build();
-	}
-
 }
