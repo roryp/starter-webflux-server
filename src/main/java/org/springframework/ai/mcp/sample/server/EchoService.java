@@ -29,13 +29,4 @@ public class EchoService {
         return message;
     }
 
-    /**
-     * Echo back a text message with a prefix
-     * @param text The text to echo
-     * @return String with prefix added
-     */
-    @Tool(description = "Echo back text with a prefix")
-    public String echoWithPrefix(String text) {
-        return "Echoed text: " + text;
-    }
 }
