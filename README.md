@@ -76,3 +76,6 @@ docker run -d -p 8080:8080 starterwebfluxserver:latest
 ### Using the ClientSse Test Client
 
 The project includes a `ClientSse` class that provides a simple client for testing the server. This utility helps you send requests and receive streaming responses from the MCP server endpoints.
+
+step 1 - Build and run the docker server (on port 8080)
+step 2 - Run the ClientSse test
