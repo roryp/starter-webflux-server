@@ -19,9 +19,6 @@ import io.modelcontextprotocol.client.transport.WebFluxSseClientTransport;
 
 import org.springframework.web.reactive.function.client.WebClient;
 
-/**
- * @author Christian Tzolov
- */
 public class ClientSse {
 
 	public static void main(String[] args) {

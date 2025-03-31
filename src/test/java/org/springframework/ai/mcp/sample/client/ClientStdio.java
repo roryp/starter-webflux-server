@@ -1,6 +1,4 @@
 /*
-* Copyright 2024 - 2024 the original author or authors.
-*
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -15,20 +13,8 @@
 */
 package org.springframework.ai.mcp.sample.client;
 
-import java.io.File;
-
-import io.modelcontextprotocol.client.transport.ServerParameters;
 import io.modelcontextprotocol.client.transport.StdioClientTransport;
 
-/**
- * With stdio transport, the MCP server is automatically started by the client.
- * But you
- * have to build the server jar first:
- *
- * <pre>
- * ./mvnw clean install -DskipTests
- * </pre>
- */
 public class ClientStdio {
 
 	public static void main(String[] args) {

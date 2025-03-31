@@ -23,10 +23,6 @@ import io.modelcontextprotocol.spec.McpSchema.CallToolRequest;
 import io.modelcontextprotocol.spec.McpSchema.CallToolResult;
 import io.modelcontextprotocol.spec.McpSchema.ListToolsResult;
 
-/**
- * @author Christian Tzolov
- */
-
 public class SampleClient {
 
 	private final McpClientTransport transport;
