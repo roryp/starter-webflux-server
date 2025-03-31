@@ -50,8 +50,8 @@ This project includes a DevContainer configuration for Visual Studio Code, provi
 2. Open the project folder in VS Code
 3. Click "Reopen in Container" when prompted or run the "Dev Containers: Reopen in Container" command
 4. The container will build and start with:
-   - Java 17 JDK
-   - Maven 3.8.7
+   - Java 21 JDK
+   - Maven 3.9.6
    - Required VS Code extensions for Spring and Java development
    - All dependencies pre-installed
 
