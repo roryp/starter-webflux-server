@@ -12,10 +12,10 @@
 
     <groupId>com.example</groupId>
 
-    <artifactId>mcp-weather-starter-webflux-server</artifactId>
+    <artifactId>mcp-echo-starter-webflux-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Spring AI MCP Weather Sample</name>
+    <name>Spring AI MCP echo Sample</name>
     <description>Sample Spring Boot application demonstrating MCP client and server usage</description>
 
     <dependencyManagement>

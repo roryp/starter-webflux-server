@@ -225,8 +225,14 @@ java -jar mcp-weather-starter-webflux-server-0.0.1-SNAPSHOT.jar
 
 starts the MCP server on port 8080.
 
-2. In another console start the client configured with SSE transport:
+Alternatively, you can use Docker:
 
+```bash
+docker build --pull --rm -f 'DockerFile' -t 'starterwebfluxserver:latest' '.' 
+docker run -d -p 8080:8080 starterwebfluxserver:latest
+```
+
+2. In another console start the client configured with SSE transport:
 ```bash
 java -Dspring.ai.mcp.client.sse.connections.weather-server.url=http://localhost:8080 \
  -Dlogging.pattern.console= \
