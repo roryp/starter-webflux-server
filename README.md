@@ -73,4 +73,6 @@ docker run -d -p 8080:8080 starterwebfluxserver:latest
 
 ## Testing the Server
 
-ClientSse class provides a simple client for testing the server. It can be used to send requests and receive responses from the server.
+### Using the ClientSse Test Client
+
+The project includes a `ClientSse` class that provides a simple client for testing the server. This utility helps you send requests and receive streaming responses from the MCP server endpoints.
