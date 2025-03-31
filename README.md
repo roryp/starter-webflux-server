@@ -74,7 +74,7 @@ In a separate terminal window, use the session ID returned in step 1 to make cal
 
 ```bash
 curl -X POST \
-  "http://localhost:8080/mcp/message?sessionId=8c247f9a-b5ea-473c-b889-42952805266d" \
+  "http://localhost:8080/mcp/message?sessionId=YOUR_SESSION_ID" \
   -H "Content-Type: application/json" \
   -d '{
     "jsonrpc": "2.0",
