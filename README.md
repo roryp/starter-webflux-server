@@ -76,3 +76,7 @@ The project includes a `ClientSse` class that provides a simple client for testi
 
 step 1 - Build and run the docker server (on port 8080)
 step 2 - Run the ClientSse test
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
