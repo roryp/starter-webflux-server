@@ -47,7 +47,22 @@ Build the project using Maven:
 java -jar target/mcp-echo-starter-webflux-server-0.0.1-SNAPSHOT.jar
 ```
 
-## running wth Docker
+## Development with DevContainer
+
+This project includes a DevContainer configuration for Visual Studio Code, providing a consistent development environment:
+
+1. Install [VS Code](https://code.visualstudio.com/) and the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
+2. Open the project folder in VS Code
+3. Click "Reopen in Container" when prompted or run the "Dev Containers: Reopen in Container" command
+4. The container will build and start with:
+   - Java 17 JDK
+   - Maven 3.8.7
+   - Required VS Code extensions for Spring and Java development
+   - All dependencies pre-installed
+
+See the `.devcontainer` folder for more details.
+
+## Running with Docker
 
 The project includes a Dockerfile for containerization:
 
