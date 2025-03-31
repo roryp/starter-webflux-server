@@ -20,7 +20,4 @@ public class McpServerApplication {
 		return MethodToolCallbackProvider.builder().toolObjects(echoService).build();
 	}
 
-	public record TextInput(String input) {
-	}
-
 }
