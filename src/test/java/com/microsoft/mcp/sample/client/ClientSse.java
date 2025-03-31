@@ -1,4 +1,4 @@
-package org.springframework.ai.mcp.sample.client;
+package com.microsoft.mcp.sample.client;
 
 import io.modelcontextprotocol.client.transport.WebFluxSseClientTransport;
 
